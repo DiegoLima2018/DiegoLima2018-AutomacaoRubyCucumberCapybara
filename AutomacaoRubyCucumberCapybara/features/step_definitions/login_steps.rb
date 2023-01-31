@@ -3,11 +3,10 @@ Quando('eu faço login com {string} e {string}') do |username, password|
   find("#uid").set username
   find("#passw").set password
   click_button "Login"
-  sleep 6
 end
 
 Então('devo ser autenticado') do
-  pending # Write code here that turns the phrase above into concrete actions
+  expect(page.assert_text('Hello John Smith')).to eq true
 end
 
 Então('devo ver {string} na área logada') do |string|

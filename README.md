@@ -14,12 +14,11 @@
 * Run: bundle init
 * inside the Gemfile file add the Gems that will be used in the example project;
 
-'''
-source <https://rubygems.org>
-gem 'capybara' 
-gem 'cucumber'
-gem 'rspec'
-'''
+* source <https://rubygems.org>
+* gem 'capybara' 
+* gem 'cucumber'
+* gem 'rspec'
+
 
 ### After creating and configuring the Gemfile run the command;
 * cucumber --init
